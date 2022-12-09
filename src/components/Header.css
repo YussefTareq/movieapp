@@ -1,0 +1,38 @@
+.header{
+    background-color: var(--primary);
+    padding: 10px 0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav-links{
+display: flex;
+align-items: center;
+}
+.header .nav-links li{
+display: inline-block;
+margin-right: 30px;
+}
+@media (max-width:575px) {
+    .header .nav-links li{
+        margin: 0 5px;
+    }
+}
+.header .nav-links li:last-child{
+    margin-right: 0;
+}
+.header a{
+    color: var(--white);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.header a:hover{
+    opacity: 0.7;
+}
+.header .logo a{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
